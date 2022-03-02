@@ -1,3 +1,218 @@
-/* ------------------------ */
-/* STYLES */
-/* ------------------------ */
+/* ----------------- */
+/* Setup */
+/* ----------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+  --creme: #feddd8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: rgba(253, 223, 212, 0.3);
+}
+
+.container {
+  padding: 50px 70px;
+}
+
+/* ----------------- */
+/* Header Section */
+/* ----------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+header > h1 {
+  font-size: 36px;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+nav > li:not(nav > li:last-child) {
+  margin-right: 50px;
+}
+
+nav button {
+  background-color: #fff;
+  padding: 7px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+/* ----------------- */
+/* Hero Section */
+/* ----------------- */
+
+.card {
+  padding: 135px 50px;
+  background-image: url("assets/cards.png"), url("assets/bg.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: bottom right 90px, center;
+  margin-bottom: 50px;
+}
+
+.hero-content > .subheading,
+.hero-content > h2 {
+  margin-bottom: 40px;
+}
+
+.subheading {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.bubble {
+  height: 13px;
+  width: 13px;
+  background-color: var(--creme);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.hero-content > h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.creme-text {
+  color: var(--creme);
+}
+
+.cta,
+.cta > button {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cta > p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
+.cta > button {
+  padding: 12px 60px;
+  background-color: var(--creme);
+  border: none;
+}
+
+/* ----------------- */
+/* Stats Section */
+/* ----------------- */
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.box {
+  display: flex;
+  width: calc(50% - 25px);
+  padding: 25px 50px;
+  justify-content: space-between;
+}
+
+.stat-box {
+  background-color: white;
+}
+
+.progress-box {
+  background-color: var(--creme);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.stat-description {
+  font-size: 24px;
+}
+
+.progress-box > .stat {
+  margin-right: 80px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.progress > p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  background-color: white;
+}
+
+/* ----------------- */
+/* Partners Section */
+/* ----------------- */
+
+.partners-headline {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.partners-headline > h2 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.partners-headline > p {
+  font-size: 24px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners > img {
+  width: 270px;
+}
